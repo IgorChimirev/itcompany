@@ -1,0 +1,202 @@
+/* About.css */
+.about {
+    background: var(--cream);
+    padding: 100px 0;
+    position: relative;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.about-text h2 {
+    text-align: left;
+    margin-bottom: 2rem;
+    color: var(--dark-blue);
+    font-family: "Andale Mono", AndaleMono, monospace;
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+
+.about-text p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: var(--blue);
+    font-family: "Andale Mono", AndaleMono, monospace;
+    text-align: left;
+}
+
+.about-features {
+    display: grid;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.feature h3 {
+    color: var(--orange);
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+    font-family: "Andale Mono", AndaleMono, monospace;
+    text-align: left;
+}
+
+.feature p {
+    margin-bottom: 0;
+    color: var(--blue);
+    font-family: "Andale Mono", AndaleMono, monospace;
+    text-align: left;
+}
+
+.about-visual {
+    position: relative;
+}
+
+.about-cards {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.about-card {
+    background: var(--cream);
+    padding: 2rem;
+    border-radius: 15px;
+    border: 1px solid var(--light-blue);
+    transition: all 0.3s ease;
+}
+
+.about-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--orange);
+}
+
+.card-1 {
+    margin-right: 2rem;
+}
+
+.card-2 {
+    margin-left: 2rem;
+}
+
+.card-3 {
+    margin-right: 2rem;
+}
+
+.card-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: rgba(249, 133, 19, 0.1);
+    margin-bottom: 1rem;
+}
+
+.about-card h4 {
+    color: var(--dark-blue);
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    font-family: "Andale Mono", AndaleMono, monospace;
+    text-align: left;
+}
+
+.about-card p {
+    margin-bottom: 0;
+    color: var(--blue);
+    line-height: 1.6;
+    font-family: "Andale Mono", AndaleMono, monospace;
+    text-align: left;
+}
+
+/* Мобильные стили с центрированием */
+@media (max-width: 968px) {
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .about-text h2 {
+        text-align: center;
+    }
+
+    .card-1,
+    .card-2,
+    .card-3 {
+        margin: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .about {
+        padding: 60px 0;
+    }
+
+    .about-text h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .about-text p {
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .about-card {
+        padding: 1.5rem;
+        text-align: center;
+        margin: 0 !important;
+    }
+
+    .about-card h4 {
+        text-align: center;
+    }
+
+    .about-card p {
+        text-align: center;
+    }
+
+    .about-features {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .feature h3 {
+        text-align: center;
+    }
+
+    .feature p {
+        text-align: center;
+    }
+
+    .card-icon {
+        margin: 0 auto 1rem auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .about {
+        padding: 40px 0;
+    }
+
+    .about-text h2 {
+        font-size: 1.8rem;
+    }
+
+    .about-card {
+        padding: 1.2rem;
+    }
+
+    .about-card h4 {
+        font-size: 1.1rem;
+    }
+
+    .card-icon {
+        width: 60px;
+        height: 60px;
+    }
+}

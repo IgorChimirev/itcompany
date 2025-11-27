@@ -1,0 +1,199 @@
+/* Footer.css */
+.footer {
+    background: var(--dark-blue);
+    color: var(--cream);
+    padding: 80px 0 30px;
+    border-top: 1px solid rgba(155, 172, 216, 0.2);
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1.5fr;
+    gap: 3rem;
+    margin-bottom: 3rem;
+}
+
+.footer-section h3 {
+    color: var(--cream);
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    font-family: "Andale Mono", AndaleMono, monospace;
+    font-weight: 300;
+}
+
+.footer-section h4 {
+    color: var(--cream);
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    font-family: "Andale Mono", AndaleMono, monospace;
+    font-weight: 300;
+}
+
+.footer-section p {
+    color: var(--light-blue);
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+    font-family: "Andale Mono", AndaleMono, monospace;
+}
+
+.footer-social {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.footer-social .social-link {
+    color: var(--light-blue);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    background: rgba(155, 172, 216, 0.1);
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    font-family: "Andale Mono", AndaleMono, monospace;
+    border: 1px solid rgba(155, 172, 216, 0.3);
+}
+
+.footer-social .social-link:hover {
+    background: var(--orange);
+    color: var(--dark-blue);
+    transform: translateY(-2px);
+    border-color: var(--orange);
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 0.8rem;
+}
+
+.footer-links a {
+    color: var(--light-blue);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-family: "Andale Mono", AndaleMono, monospace;
+}
+
+.footer-links a:hover {
+    color: var(--orange);
+    padding-left: 5px;
+}
+
+.footer-contact p {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    color: var(--light-blue);
+    font-family: "Andale Mono", AndaleMono, monospace;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(155, 172, 216, 0.2);
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.footer-bottom p {
+    color: var(--light-blue);
+    margin-bottom: 0;
+    font-family: "Andale Mono", AndaleMono, monospace;
+}
+
+.footer-legal {
+    display: flex;
+    gap: 2rem;
+}
+
+.footer-legal a {
+    color: var(--light-blue);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+    font-family: "Andale Mono", AndaleMono, monospace;
+}
+
+.footer-legal a:hover {
+    color: var(--orange);
+}
+
+/* Footer.css - добавить мобильные стили */
+@media (max-width: 968px) {
+    .footer-content {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 60px 0 20px;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        text-align: center;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .footer-legal {
+        justify-content: center;
+    }
+
+    .footer-social {
+        justify-content: center;
+    }
+
+    .footer-contact p {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        padding: 40px 0 15px;
+    }
+
+    .footer-section h3 {
+        font-size: 1.3rem;
+    }
+
+    .footer-section h4 {
+        font-size: 1rem;
+    }
+
+    .footer-legal {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .footer-social .social-link {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.8rem;
+    }
+}
+
+
+
+
+
+
+.footer-social .social-link,
+.footer-contact p {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
